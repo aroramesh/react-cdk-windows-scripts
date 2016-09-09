@@ -12,9 +12,9 @@ Working under windows you can't use all the features of React-cdk because of uns
 Then manually change in package.json -> "scripts" : 
 - "publish-storybook": ".scripts\\\\publish_storybook.cmd",
 - "prepublish": ".scripts\\\\prepublish.cmd",
-- "lint": ".scripts\\lint.cmd src",
-- "lintfix": ".scripts\\lint.cmd src --fix",
-- "testonly": ".scripts\\test.cmd",
+- "lint": ".scripts\\\\lint.cmd src",
+- "lintfix": ".scripts\\\\lint.cmd src --fix",
+- "testonly": ".scripts\\\\test.cmd",
 ~~~
 >cd react-wizard
 >npm install
@@ -38,7 +38,7 @@ Now you can use:
 
 ## Issues
 if you have problems with test-watch script like [here](https://github.com/mochajs/mocha/issues/2327), so you can't use it from `cmd`
-However, as a temporary solution you can run it from `mintty` shell. Possible you already have it if you use [`Git for windowd`](https://git-scm.com/download) or your can install [cmder](http://cmder.net/).
+However, as a temporary solution you can run it from `mintty` shell. Possible you already have it if you use [`Git for windows`](https://git-scm.com/download) or your can install [cmder](http://cmder.net/).
 To run this script you need to change in package.json -> "scripts" : 
 - "test-watch": "bash .scripts\\test-watch.sh",
 - run your mintty shell
