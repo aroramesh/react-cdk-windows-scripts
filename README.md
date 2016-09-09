@@ -37,8 +37,12 @@ Now you can use:
 - linting *.js and *.jsx as well
 
 ## Issues
-if you can't use test-watch script see [this issue](https://github.com/mochajs/mocha/issues/2327)
-However, as a temporary solution you can run it from [`Git Bash`](https://git-scm.com/download) for windows.
+if you have problems with test-watch script like [here](https://github.com/mochajs/mocha/issues/2327), so you can't use it from `cmd`
+However, as a temporary solution you can run it from `mintty` shell. Possible you already have it if you use [`Git for windowd`](https://git-scm.com/download) or your can install [cmder](http://cmder.net/).
+To run this script you need to change in package.json -> "scripts" : 
+- "test-watch": "bash .scripts\\test-watch.sh",
+- run your mintty shell
+- cd Drive:\Path\react-wizard
 ~~~
 $npm run test-watch
 ~~~
