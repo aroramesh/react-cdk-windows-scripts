@@ -1,0 +1,13 @@
+
+    "scripts": {
+    "publish-storybook": ".scripts\\publish_storybook.cmd",
+    "prepublish": ".scripts\\prepublish.cmd",
+    "lint": ".scripts\\lint.cmd src",
+    "lintfix": ".scripts\\lint.cmd src --fix",
+    "testonly": ".scripts\\test.cmd",
+    "test": "npm run lint && npm run testonly",
+    "test-watch": "bash .scripts\\test-watch.sh",
+    "storybook": "start-storybook -p 9010",
+    "start": "start-storybook -p 9001"
+  }
+
